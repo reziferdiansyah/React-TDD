@@ -14,24 +14,7 @@
  * limitations under the License.
  */
 
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Counter from './components/Counter/counter';
-import Header from './components/Header/header';
+import Adapter from 'enzyme-adapter-react-16';
+import { configure } from 'enzyme';
 
-import './App.css';
-
-function App() {
-  return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/counter">
-          <Counter />
-        </Route>
-      </Switch>
-    </Router>
-  );
-}
-
-export default App;
+configure({ adapter: new Adapter() });

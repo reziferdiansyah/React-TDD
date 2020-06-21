@@ -15,23 +15,18 @@
  */
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Counter from './components/Counter/counter';
-import Header from './components/Header/header';
+import { Link } from 'react-router-dom';
 
-import './App.css';
+export default class Header extends React.Component{
 
-function App() {
-  return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/counter">
-          <Counter />
-        </Route>
-      </Switch>
-    </Router>
-  );
-}
+    render = () => {
+        return (<header>
+           <ul className="menu">
+                <li id='submenu-counter'>
+                    <Link to="/counter">Compteur</Link>
+                </li>
+            </ul>
+        </header>);
+    }// render()
 
-export default App;
+}// Header

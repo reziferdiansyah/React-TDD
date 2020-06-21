@@ -1,0 +1,31 @@
+#component-counter{
+    text-align: center;
+} 
+
+#component-counter #display-counter{
+    width: 30%;
+    margin: 0 auto;
+    background-color: #000;
+    color: rgb(6, 177, 0);
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+#component-counter .button{
+    margin-right: 15px;
+    padding: 6px 10px;
+    color: #fff;
+    font-weight: bold;
+    border: none !important;
+    cursor: pointer;
+}
+
+#component-counter #increment-counter{
+    background-color: #0089ff;
+}
+
+#component-counter #decrement-counter{
+    background-color: #c52121;
+}
